@@ -194,7 +194,7 @@
             <td>Unsigned</td>
         </tr>{% endif %}<tr>
             <th>Last Updated:</th>
-            <td>{{ pkg.last_update|date:"DATETIME_FORMAT" }} UTC{% if pkg.is_recent %} <span class="recent" title="Your mirror may not yet have this package version">({{ pkg.last_update|naturaltime }})</span>{% endif %}</td>
+            <td>{{ pkg.last_update|date:"DATETIME_FORMAT" }} UTC{% if pkg.is_recent %} <span class="recent" title="Your mirror may not have this package version yet">({{ pkg.last_update|naturaltime }})</span>{% endif %}</td>
         </tr>
         {% if user.is_authenticated %}<tr>
             <th>Reproducible Status:</th>
